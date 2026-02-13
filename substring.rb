@@ -1,7 +1,7 @@
-def substring(word, substrings)
+def substring(string, substrings)
     results = {}
     substrings.each do |item|
-        if word.include?(item)
+        if string.downcase.include?(item)
             if results.has_key?(item)
                 results[item] += 1
             else
